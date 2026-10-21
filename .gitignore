@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+pytest-of-*/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Raw data must never be committed; processed data/index files are rebuildable
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Databases and vector indexes are rebuildable
+storage/*
+!storage/.gitkeep
+
+# Model weights / caches
+models/
+.cache/
+*.onnx
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Large generated databases and columnar data files
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.parquet
+*.arrow
+
+# Local ACL recovery snapshots produced by the environment
+.acl-recovery/
+
+# Scratch experiments are kept locally, not in version control
+scratch/*
+!scratch/.gitkeep
+
+# pip temporary directories and jieba cache must not enter the repo
+pip-*/
+jieba.cache
+
+# Local LLM credentials must never be committed
+config/agent.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
