@@ -1,0 +1,30 @@
+{
+  "format": "p6-queries-v1",
+  "generated_at": "",
+  "seed": 42,
+  "query_count": 128,
+  "answerable_count": 118,
+  "unanswerable_count": 10,
+  "clue_type_counts": {
+    "subject_summary": 20,
+    "character_summary": 20,
+    "episode_plot": 20,
+    "cross_type_character": 10,
+    "cross_type_episode": 10,
+    "name": 18,
+    "alias": 10,
+    "traditional": 5,
+    "fragment": 5,
+    "unanswerable": 10
+  },
+  "p4_config_id": "618c2efa859f16b9675c864b5ffe0912538939df5aeb26920b747429f4e1d0c1",
+  "p4_checkpoint": "E:\\PlotSeeker\\storage\\vector_store\\p4_checkpoint.json",
+  "source_manifest": "E:\\PlotSeeker\\data\\processed\\documents\\manifest.json",
+  "limitations": [
+    "Queries are generated from indexed document text, not independent human queries.",
+    "Name and alias queries are intentionally easy and measure exact-match coverage.",
+    "Summary/episode/fragment queries may still share wording with indexed text.",
+    "Acceptable answers use only the primary subject recorded in the P3 document.",
+    "Negative queries are synthetic and may accidentally match real vocabulary."
+  ]
+}
