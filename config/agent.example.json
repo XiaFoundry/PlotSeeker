@@ -1,0 +1,11 @@
+{
+  "provider": "openai-compatible",
+  "api_key": "",
+  "base_url": "https://api.deepseek.com/v1",
+  "model": "deepseek-chat",
+  "temperature": 0.2,
+  "max_tokens": 1200,
+  "timeout_seconds": 90,
+  "max_tool_rounds": 4,
+  "top_k": 5
+}
